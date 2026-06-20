@@ -3,3 +3,10 @@ line-length = 88
 
 [tool.pylint.format]
 max-line-length = 88
+
+[tool.pylint."messages control"]
+disable = [
+    "missing-module-docstring",
+    "missing-function-docstring",
+    "redefined-outer-name"
+]

@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
-source .venv/bin/activate
-black .
+python -m black .

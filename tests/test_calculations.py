@@ -1,5 +1,5 @@
-from finance.calculations import total_income, total_expenses, balance
 import pytest
+from finance.calculations import total_income, total_expenses, balance
 
 
 @pytest.fixture
