@@ -6,9 +6,9 @@ A minimal example Python project demonstrating a CLI (`app.py`), a simple applic
 testing, and cleaning.
 
 ## Repository structure
-- `app.py` - implementing CLI
-- `finance/` - module implementing application logic
-- `tests/` - test module
+- `app.py` — implementing CLI
+- `finance/` — module implementing application logic
+- `tests/` — test module
 - `scripts/` — helper scripts (setup, format, lint, test, clean)
 
 ## Developement Quick Start
