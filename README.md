@@ -15,7 +15,7 @@ Clone the repository and run scripts:
 git clone https://github.com/Karoljw/python-test-repo.git
 cd python-test-repo
 ./scripts/setup.sh
-`
+```
 
 - **Code formatting**
 Format the code automatically:
