@@ -1,15 +1,19 @@
 # python-test-repo
 
-Template repository on GitHub based on sample python code.
+## Overview
+A minimal example Python project demonstrating a CLI (`app.py`), a simple application module
+(`finance/`), and tests (`tests/`). This repo includes helper scripts for setup, formatting, linting,
+testing, and cleaning.
 
 ## Repository structure
 - `app.py` - implementing CLI
 - `finance/` - module implementing application logic
 - `tests/` - test module
+- `scripts/` — helper scripts (setup, format, lint, test, clean)
 
 ## Developement Quick Start
 
-Clone the repository and run scripts:
+Clone and prepare the project:
 
 ```bash
 git clone https://github.com/Karoljw/python-test-repo.git
@@ -17,34 +21,30 @@ cd python-test-repo
 ./scripts/setup.sh
 ```
 
-- **Code formatting**
-  - Format the code automatically:
-  - ./scripts/format.sh
+## Scripts
 
-  - Check if the code is properly formatted:
-  - ./scripts/check-format.sh
+All utility scripts are located in the `scripts/` directory and are intended to simplify common development tasks:
 
-- **Linting**
-Run static code analysis:
-./scripts/lint.sh
+- setup.sh — create venv, install dependencies
+- format.sh — run Black (auto-format)
+- check-format.sh — verify formatting
+- lint.sh — run Pylint
+- test.sh — run pytest
+- clean.sh — remove build/dist/__pycache__ and other temp files
 
-- **Testing**
-Run tests with pytest:
-./scripts/test.sh
+Make scripts executable if needed:
+```bash
+chmod +x ./scripts/*.sh
+```
 
-- **Cleaning temporary files**
-Remove temporary files and cache files:
-./scripts/clean.sh
+## Continuous Integration
 
-- **CI Pipeline**
-The CI pipeline runs automatically:
+CI runs on:
+- push to `develop`
+- pull requests to `main`
 
-on push to develop
-on pull request to main
-
-The pipeline checks:
-
-environment setup and dependency installation
-code formatting with Black
-static code analysis with Pylint
-tests with Pytest
+Pipeline checks typically include:
+- Environment setup & dependency installation
+- Code formatting (Black)
+- Static analysis (Pylint)
+- Unit tests (pytest)
