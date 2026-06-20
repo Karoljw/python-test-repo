@@ -18,8 +18,8 @@ cd python-test-repo
 ```
 
 - **Code formatting**
-  - Format the code automatically:
-  -- ./scripts/format.sh
+  Format the code automatically:
+  ./scripts/format.sh
     
   - Check if the code is properly formatted:
   -- ./scripts/check-format.sh
