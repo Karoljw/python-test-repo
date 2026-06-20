@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -d "venv" ]; then
-  python3 -m venv .venv
+  python -m venv venv
 fi
 
 if [ -d "venv/Scripts" ]; then
