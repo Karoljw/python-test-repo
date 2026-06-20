@@ -2,8 +2,8 @@
 set -e
 
 if [ ! -d "venv" ]; then
-  py -m venv .venv
+  python3 -m venv .venv
 fi
 
-source venv/Scripts/activate
+source .venv/bin/activate
 pip install -r requirements.txt

@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-source venv/Scripts/activate
+source .venv/bin/activate
 black --check .

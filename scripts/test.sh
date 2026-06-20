@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-source venv/Scripts/activate
-py -m pytest .
+source .venv/bin/activate
+python -m pytest .
