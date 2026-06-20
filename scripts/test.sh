@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-python -m pytest .
+if [ -f "venv/bin/python" ]; then
+  venv/bin/python -m pytest
+else
+  venv/Scripts/python -m pytest
+fi

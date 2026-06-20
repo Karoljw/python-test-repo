@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-python -m black --check .
+if [ -f "venv/bin/python" ]; then
+  venv/bin/python -m black --check .
+else
+  venv/Scripts/python -m black --check .
+fi

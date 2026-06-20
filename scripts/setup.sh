@@ -10,5 +10,5 @@ fi
 if [ -f "venv/bin/python" ]; then
   venv/bin/python -m pip install -r requirements.txt
 else
-  venv/Scripts/python -m pip install -r requirements.tx
+  venv/Scripts/python -m pip install -r requirements.txt
 fi

@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-python -m pylint app.py finance tests
+if [ -f "venv/bin/python" ]; then
+  venv/bin/python -m pylint app.py finance tests
+else
+  venv/Scripts/python -m pylint app.py finance tests
+fi
